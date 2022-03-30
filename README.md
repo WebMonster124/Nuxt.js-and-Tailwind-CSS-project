@@ -1,4 +1,4 @@
-# coffeealternative.com
+# Nuxt.js + Tailwind CSS
 
 ## Build Setup
 
