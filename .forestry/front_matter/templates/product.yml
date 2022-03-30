@@ -1,0 +1,32 @@
+---
+label: Reviews
+hide_body: false
+fields:
+- name: product_name
+  type: text
+  config:
+    required: false
+  label: Product Name
+- name: hero
+  type: file
+  config:
+    maxSize: 64
+  label: Hero
+- name: active
+  type: boolean
+  label: Active
+- name: rating
+  type: number
+  label: Rating
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: affiliate_link
+  type: text
+  config:
+    required: false
+  label: Affiliate Link

@@ -1,0 +1,16 @@
+---
+label: Article
+hide_body: false
+fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+pages:
+- content/articles/10 Coffee Alternatives.md
+- content/articles/4 Types of Alternative Coffee.md
+- content/articles/5 Coffee Alternatives.md
+- content/articles/Capomo.md
+- content/articles/Chaga Mushroom Coffee.md
+- content/articles/Coffee Creamer Alternatives.md

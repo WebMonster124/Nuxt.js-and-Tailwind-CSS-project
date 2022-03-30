@@ -1,0 +1,141 @@
+---
+label: Brands
+hide_body: true
+fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: active
+  type: boolean
+  label: Active
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
+- name: seo
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: meta
+    type: text
+    config:
+      required: false
+    label: Meta
+  - name: description
+    type: text
+    config:
+      required: false
+    label: Description
+  label: SEO
+- name: products
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+  - name: active
+    type: boolean
+    label: Active
+  - name: affiliate_link
+    type: text
+    config:
+      required: false
+    label: Affiliate Link
+  - name: asin
+    type: text
+    config:
+      required: false
+    label: ASIN
+  - name: features
+    type: field_group
+    config: {}
+    fields:
+    - name: gluten_free
+      type: boolean
+      label: Gluten Free
+    - name: vegan
+      type: boolean
+      label: Vegan
+    - name: whole30
+      type: boolean
+      label: Whole30
+    - name: keto
+      type: boolean
+      label: Keto
+    - name: organic
+      type: boolean
+      label: Organic
+    - name: caffine
+      type: boolean
+      label: Caffine
+    label: Features
+  - name: main_image
+    type: field_group
+    config: {}
+    fields:
+    - name: main_image
+      type: file
+      config:
+        maxSize: 64
+      label: Main Image
+    - name: photo_credit
+      type: text
+      config:
+        required: false
+      label: Photo Credit
+    label: Main Image
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Products
+- name: main_image
+  type: field_group
+  config: {}
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  - name: photo_credit
+    type: text
+    config:
+      required: false
+    label: Photo Credit
+  label: Main Image
+pages:
+- content/brands/ayurvedicroast.md
+- content/brands/coffig.md
+- content/brands/mud-wtr.md
+- content/brands/postum.md
+- content/brands/rasa.md
+- content/brands/teeccino.md
